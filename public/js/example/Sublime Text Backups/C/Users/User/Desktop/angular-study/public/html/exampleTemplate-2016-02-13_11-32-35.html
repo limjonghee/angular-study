@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <script src="../components/angular/angular.js"></script>
+    <script src="../js/example/controller.js"></script>
+    <script src="../js/example/directive.js"></script>
+    <link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../components/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet"/>
+</head>
+<body ng-app="example" ng-controller="ExampleController">
+   <table>
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th>Price</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr ng-repeat="item in products">
+               <td>{{item.name}}</td>
+               <td>{{item.name}}</td>
+           </tr>
+       </tbody>
+   </table>
+
+</body>
+</html>
